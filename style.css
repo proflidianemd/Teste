@@ -1,0 +1,118 @@
+/* Variáveis de cores */
+:root {
+  --azul-claro: #d0e9f7;
+  --azul-escuro: #004e89;
+  --verde-destaque: #88c9bf;
+  --amarelo-bloco: #fff59d;
+  --preto: #000;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--azul-claro);
+  color: var(--preto);
+  line-height: 1.6;
+  padding: 0 10px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--azul-escuro);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.imagem-header {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Texto introdutório */
+.texto-intro {
+  margin: 20px 0;
+}
+
+.imagem-destaque {
+  width: 70%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* Blocos informativos */
+.info-bloco {
+  background-color: var(--amarelo-bloco);
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 8px;
+  color: var(--preto);
+}
+
+.info-bloco h2 {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Link final */
+.link-final {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.link-final a {
+  background-color: var(--verde-destaque);
+  padding: 10px 15px;
+  color: var(--preto);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.link-final a:hover {
+  background-color: var(--azul-escuro);
+  color: white;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--azul-escuro);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imagem-header {
+    margin-top: 15px;
+  }
+
+  .imagem-destaque {
+    width: 90%;
+  }
+}
